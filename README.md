@@ -201,4 +201,4 @@ Tests run: 3  |  Passed: 3  |  Failed: 0
 ## Author
 
 **Prajwal Neupane**  
-prajwalneupane.apag@gmail.com
+prajwalneupane.dev@gmail.com
