@@ -48,6 +48,9 @@ void CRYO_run_control_logic(CryoSystem_t *sys)
         case STATE_TRANSFERRING:
             printf("State: TRANSFERRING. Full-flow active cryogenic mass delivery.\n");
             HAL_write_cryo_valve_PWM(100); // Valve fully open
+
+            //Some logic here to know that the fueling is complete
+            sys->current_state = STATE_PURGING;
             break;
         case STATE_PURGING:
             printf("State: PURGING. Clearing line residuals with Helium push.\n");
