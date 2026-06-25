@@ -1,0 +1,43 @@
+<mxfile host="65bd71144e">
+    <diagram id="KKN3MT-PdDbw-KIN0ZlF" name="Page-1">
+        <mxGraphModel dx="593" dy="1242" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Physical Hardware Layer" style="rounded=1;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="190" width="470" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="SPI Cryo Transducer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="420" y="230" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="PWM Proportional Valve" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="570" y="230" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="GPIO Vent" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="230" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="2">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Exposes Safe Functional API" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="6" target="11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Hardware Abstraction Layer [HAL]&lt;div&gt;cryo_hal.c&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-HAL_read_pressure_sensor_SPI()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-HAL_write_cryo_valve_PWM()&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-HAL_write_vent_valve_GPIO()&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="350" width="470" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Reads Registers / Drives Voltages" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="280" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Writes Registers / Flips Pin States" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="630" y="280" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Core Logic Engine Layer&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;cryo_controller.c&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-CRYO_check_safety_invariants()&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;-CRYO_run_control_logic()&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;horizontal=1;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="510" width="470" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
